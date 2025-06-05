@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("csharp-otaku")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+947777b51eb220cba9c4cdf8d727a6fbcaa32206")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+909780d7955bf9a5d8df371090f45331610b5d80")]
 [assembly: System.Reflection.AssemblyProductAttribute("csharp-otaku")]
 [assembly: System.Reflection.AssemblyTitleAttribute("csharp-otaku")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
