@@ -1,5 +1,5 @@
 ﻿using csharp_otaku.Global;
-using csharp_otaku.ValueReferenceTypes;
+using csharp_otaku.ReferenceValueTypes;
 
 namespace csharp_otaku
 {
@@ -7,11 +7,12 @@ namespace csharp_otaku
   {
     static void Main(string[] args)
     {
-      // Reference types
+      // value types
       var number = 1;
-      ReferenceTypes.Increment(number);
+      ValueTypes.Increment(number);
       Console.WriteLine(number);
 
+      // reference types
       var person = new Person { Age = 20 };
       ReferenceTypes.MakeOld(person);
       Console.WriteLine(person.Age);
