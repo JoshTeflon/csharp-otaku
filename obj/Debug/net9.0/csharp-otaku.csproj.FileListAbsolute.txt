@@ -1,0 +1,15 @@
+/Users/teflon/code/tef/csharp-otaku/bin/Debug/net9.0/csharp-otaku
+/Users/teflon/code/tef/csharp-otaku/bin/Debug/net9.0/csharp-otaku.deps.json
+/Users/teflon/code/tef/csharp-otaku/bin/Debug/net9.0/csharp-otaku.runtimeconfig.json
+/Users/teflon/code/tef/csharp-otaku/bin/Debug/net9.0/csharp-otaku.dll
+/Users/teflon/code/tef/csharp-otaku/bin/Debug/net9.0/csharp-otaku.pdb
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/csharp-otaku.GeneratedMSBuildEditorConfig.editorconfig
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/csharp-otaku.AssemblyInfoInputs.cache
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/csharp-otaku.AssemblyInfo.cs
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/csharp-otaku.csproj.CoreCompileInputs.cache
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/csharp-otaku.sourcelink.json
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/csharp-otaku.dll
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/refint/csharp-otaku.dll
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/csharp-otaku.pdb
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/csharp-otaku.genruntimeconfig.cache
+/Users/teflon/code/tef/csharp-otaku/obj/Debug/net9.0/ref/csharp-otaku.dll

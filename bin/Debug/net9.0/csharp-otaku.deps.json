@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "HelloCsharp/1.0.0": {
+      "csharp-otaku/1.0.0": {
         "runtime": {
-          "HelloCsharp.dll": {}
+          "csharp-otaku.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "HelloCsharp/1.0.0": {
+    "csharp-otaku/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

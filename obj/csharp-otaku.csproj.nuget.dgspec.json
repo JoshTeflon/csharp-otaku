@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/teflon/code/tef/HelloCsharp/HelloCsharp.csproj": {}
+    "/Users/teflon/code/tef/csharp-otaku/csharp-otaku.csproj": {}
   },
   "projects": {
-    "/Users/teflon/code/tef/HelloCsharp/HelloCsharp.csproj": {
+    "/Users/teflon/code/tef/csharp-otaku/csharp-otaku.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/teflon/code/tef/HelloCsharp/HelloCsharp.csproj",
-        "projectName": "HelloCsharp",
-        "projectPath": "/Users/teflon/code/tef/HelloCsharp/HelloCsharp.csproj",
+        "projectUniqueName": "/Users/teflon/code/tef/csharp-otaku/csharp-otaku.csproj",
+        "projectName": "csharp-otaku",
+        "projectPath": "/Users/teflon/code/tef/csharp-otaku/csharp-otaku.csproj",
         "packagesPath": "/Users/teflon/.nuget/packages/",
-        "outputPath": "/Users/teflon/code/tef/HelloCsharp/obj/",
+        "outputPath": "/Users/teflon/code/tef/csharp-otaku/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/teflon/.nuget/NuGet/NuGet.Config"
