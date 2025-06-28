@@ -24,6 +24,9 @@ namespace csharp_otaku
 
       var isPremiumMember = true;
       IfElse.SubscriptionPrice(isPremiumMember);
+
+      var season = Season.Harmattan;
+      Switch.SeasonReview(season);
     }
   }
 }

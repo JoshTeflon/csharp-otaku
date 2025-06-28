@@ -4,4 +4,11 @@ namespace csharp_otaku.Global
   {
     public int Age { get; set; }
   }
+
+  public enum Season
+  {
+    Dry,
+    Rainy,
+    Harmattan
+  }
 }
