@@ -1,6 +1,7 @@
 ﻿using csharp_otaku.Global;
 using csharp_otaku.ReferenceValueTypes;
 using csharp_otaku.Conditionals;
+using csharp_otaku.Iterations;
 
 namespace csharp_otaku
 {
@@ -28,10 +29,14 @@ namespace csharp_otaku
       var season = Season.Harmattan;
       Switch.SeasonReview(season);
 
+      // conditionals exercises
       Exercise.ValidateOneToTen();
       Exercise.GetDualMax();
       Exercise.ValidateImageOreintation();
       Exercise.ValidateSpeedLimit();
+
+      // iterations
+      ForLoop.PrimeNumberCheck();
     }
   }
 }
