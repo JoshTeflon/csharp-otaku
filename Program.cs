@@ -27,6 +27,8 @@ namespace csharp_otaku
 
       var season = Season.Harmattan;
       Switch.SeasonReview(season);
+
+      Exercise.ValidateOneToTen();
     }
   }
 }
