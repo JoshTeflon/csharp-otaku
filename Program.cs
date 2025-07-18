@@ -37,6 +37,7 @@ namespace csharp_otaku
 
       // iterations
       ForLoop.PrimeNumberCheck();
+      ForLoop.ForForEachDifference();
     }
   }
 }
