@@ -20,7 +20,7 @@ namespace csharp_otaku.Conditionals
       }
     }
 
-    public static float SubscriptionPrice(Boolean isPremium)
+    public static float SubscriptionPrice(bool isPremium)
     {
       float defaultPrice = 9.99f;
       float premiumPrice = 19.99f;
