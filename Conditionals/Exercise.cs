@@ -62,5 +62,35 @@ namespace csharp_otaku.Conditionals
         Console.WriteLine($"Square: {width} x {height}");
       }
     }
+
+    public static void ValidateSpeedLimit()
+    {
+      Console.Write("Enter speed limit:");
+      var inputSpeedLimit = Console.ReadLine();
+      int speedLimit = Convert.ToInt32(inputSpeedLimit);
+
+      Console.Write("Enter car speed:");
+      var inputSpeedOfCar = Console.ReadLine();
+      int speedOfCar = Convert.ToInt32(inputSpeedOfCar);
+
+      if (speedOfCar <= speedLimit)
+      {
+        Console.WriteLine($"Ok! {speedOfCar} is below the limit set as {speedLimit}");
+      }
+      else
+      {
+        int limitGap = speedOfCar - speedLimit;
+        int demeritPoints = limitGap / 5;
+
+        if (demeritPoints <= 12)
+        {
+          Console.WriteLine($"Demerit points: {demeritPoints}⚠️");
+        }
+        else
+        {
+          Console.WriteLine("License Suspended!⛔️");
+        }
+      }
+    }
   }
 }
