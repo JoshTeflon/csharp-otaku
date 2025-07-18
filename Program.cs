@@ -29,6 +29,7 @@ namespace csharp_otaku
       Switch.SeasonReview(season);
 
       Exercise.ValidateOneToTen();
+      Exercise.GetDualMax();
     }
   }
 }
