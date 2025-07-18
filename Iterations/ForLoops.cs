@@ -1,6 +1,6 @@
 namespace csharp_otaku.Iterations
 {
-  static class ForLoop
+  static class ForLoops
   {
     public static void PrimeNumberCheck()
     {
