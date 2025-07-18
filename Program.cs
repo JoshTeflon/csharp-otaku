@@ -30,6 +30,7 @@ namespace csharp_otaku
 
       Exercise.ValidateOneToTen();
       Exercise.GetDualMax();
+      Exercise.ValidateImageOreintation();
     }
   }
 }

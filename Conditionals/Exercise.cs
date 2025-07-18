@@ -38,5 +38,29 @@ namespace csharp_otaku.Conditionals
         Console.WriteLine($"{a} == {b}");
       }
     }
+
+    public static void ValidateImageOreintation()
+    {
+      Console.Write("Enter image width: ");
+      var inputWidth = Console.ReadLine();
+      int width = Convert.ToInt32(inputWidth);
+
+      Console.Write("Enter image height: ");
+      var inputHeight = Console.ReadLine();
+      int height = Convert.ToInt32(inputHeight);
+
+      if (width > height)
+      {
+        Console.WriteLine($"Landscape: {width} x {height}");
+      }
+      else if (height > width)
+      {
+        Console.WriteLine($"Portrait: {width} x {height}");
+      }
+      else
+      {
+        Console.WriteLine($"Square: {width} x {height}");
+      }
+    }
   }
 }
