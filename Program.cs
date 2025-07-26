@@ -30,10 +30,10 @@ namespace csharp_otaku
       Switch.SeasonReview(season);
 
       // conditionals exercises
-      Exercise.ValidateOneToTen();
-      Exercise.GetDualMax();
-      Exercise.ValidateImageOreintation();
-      Exercise.ValidateSpeedLimit();
+      Conditionals.Exercise.ValidateOneToTen();
+      Conditionals.Exercise.GetDualMax();
+      Conditionals.Exercise.ValidateImageOreintation();
+      Conditionals.Exercise.ValidateSpeedLimit();
 
       // iterations
       ForLoops.PrimeNumberCheck();
@@ -41,6 +41,9 @@ namespace csharp_otaku
       ForLoops.GenerateRandomPassword();
 
       WhileLoops.PrintEnteredName();
+
+      // iterations exercise
+      Iterations.Exercise.DivisbleByThree();
     }
   }
 }
