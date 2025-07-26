@@ -47,6 +47,7 @@ namespace csharp_otaku
       Iterations.Exercise.SumOfEnteredNumbers();
       Iterations.Exercise.CalculateFactorial();
       Iterations.Exercise.GuessingGame();
+      Iterations.Exercise.FindMaxNumberInList();
     }
   }
 }
