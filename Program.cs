@@ -46,6 +46,7 @@ namespace csharp_otaku
       Iterations.Exercise.DivisbleByThree();
       Iterations.Exercise.SumOfEnteredNumbers();
       Iterations.Exercise.CalculateFactorial();
+      Iterations.Exercise.GuessingGame();
     }
   }
 }
