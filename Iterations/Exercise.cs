@@ -53,5 +53,24 @@ namespace csharp_otaku.Iterations
         }
       }
     }
+
+    /// <summary>
+    /// Write a program and ask the user to enter a number. Compute the factorial of the number and print it on the console. For example, if the user enters 5, the program should calculate 5 x 4 x 3 x 2 x 1 and display it as 5! = 120.
+    /// <summary>
+
+    public static void CalculateFactorial()
+    {
+      var currentValue = 1;
+
+      Console.Write("Enter a number");
+      var number = Console.ReadLine();
+
+      for (int i = Convert.ToInt32(number); i >= 1; i--)
+      {
+        currentValue *= i;
+      }
+
+      Console.WriteLine($"{number}! = {currentValue}");
+    }
   }
 }
