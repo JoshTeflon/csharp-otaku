@@ -22,5 +22,36 @@ namespace csharp_otaku.Iterations
 
       Console.WriteLine($"There {(divisibleNumbers.Length > 1 ? "are" : "is")} {divisibleNumbers.Length} number{(divisibleNumbers.Length > 1 ? "s" : "")} divisible by 3 from 1 - 100");
     }
+
+    /// <summary>
+    /// Write a program and continuously ask the user to enter a number or "ok" to exit. Calculate the sum of all the previously entered numbers and display it on the console.
+    /// </summary>
+
+    public static void SumOfEnteredNumbers()
+    {
+      var enteredNumbers = Array.Empty<int>();
+
+      while (true)
+      {
+        Console.Write("Enter a number");
+        var number = Console.ReadLine();
+
+        if (number == "ok")
+        {
+          var sum = enteredNumbers.Sum();
+          Console.WriteLine($"The sum of the entered numbers is {sum}");
+
+          break;
+        }
+        else
+        {
+          var tempList = enteredNumbers.ToList();
+          tempList.Add(Convert.ToInt32(number));
+
+          enteredNumbers = [.. tempList];
+          continue;
+        }
+      }
+    }
   }
 }

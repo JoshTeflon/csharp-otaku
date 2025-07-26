@@ -44,6 +44,7 @@ namespace csharp_otaku
 
       // iterations exercise
       Iterations.Exercise.DivisbleByThree();
+      Iterations.Exercise.SumOfEnteredNumbers();
     }
   }
 }
