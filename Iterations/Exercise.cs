@@ -34,7 +34,7 @@ namespace csharp_otaku.Iterations
         Console.Write("Enter a number");
         var number = Console.ReadLine();
 
-        if (number == "ok")
+        if (number?.ToLower() == "ok")
         {
           var sum = enteredNumbers.Sum();
           Console.WriteLine($"The sum of the entered numbers is {sum}");
@@ -110,8 +110,24 @@ namespace csharp_otaku.Iterations
     {
       Console.Write("Enter a series of numbers separated by comma");
       var numbers = Console.ReadLine();
+
+      var numbersList = numbers?.Split(",");
+      var maxNumber = 0;
+
+      if (numbersList?.Length > 0)
+      {
+        foreach (var number in numbersList)
+        {
+          var currentNumber = Convert.ToInt32(number);
+
+          if (currentNumber > maxNumber)
+          {
+            maxNumber = currentNumber;
+          }
+        }
+      }
       
-      Console.WriteLine(numbers?.Split(",").Max());
+      Console.WriteLine($"The max number is {maxNumber}");
     }
   }
 }
