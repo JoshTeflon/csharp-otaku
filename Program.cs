@@ -36,8 +36,11 @@ namespace csharp_otaku
       Exercise.ValidateSpeedLimit();
 
       // iterations
-      ForLoop.PrimeNumberCheck();
-      ForLoop.ForForEachDifference();
+      ForLoops.PrimeNumberCheck();
+      ForLoops.ForForEachDifference();
+      ForLoops.GenerateRandomPassword();
+
+      WhileLoops.PrintEnteredName();
     }
   }
 }

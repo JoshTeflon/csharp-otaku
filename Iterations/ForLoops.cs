@@ -7,7 +7,7 @@ namespace csharp_otaku.Iterations
       Console.Write("Enter a number to check if it is prime: ");
       var input = Console.ReadLine();
       int number = Convert.ToInt32(input);
-      
+
       if (number < 2)
       {
         Console.WriteLine($"{number} is not a prime number.");
@@ -46,6 +46,20 @@ namespace csharp_otaku.Iterations
       {
         Console.WriteLine(number);
       }
+    }
+
+    public static void GenerateRandomPassword(int passwordLength = 10)
+    {
+      var random = new Random();
+      var buffer = new char[passwordLength];
+
+      for (int i = 0; i < passwordLength; i++)
+      {
+        buffer[i] = (char)('a' + random.Next(0, 26));
+      }
+
+      var password = new string(buffer);
+      Console.WriteLine($"password is: {password}");
     }
   }
 }
