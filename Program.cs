@@ -2,6 +2,7 @@
 using csharp_otaku.ReferenceValueTypes;
 using csharp_otaku.Conditionals;
 using csharp_otaku.Iterations;
+using csharp_otaku.ArraysLists;
 
 namespace csharp_otaku
 {
@@ -48,6 +49,9 @@ namespace csharp_otaku
       Iterations.Exercise.CalculateFactorial();
       Iterations.Exercise.GuessingGame();
       Iterations.Exercise.FindMaxNumberInList();
+
+      // Arrays
+      ArraysLists.Arrays.ArrayMethods();
     }
   }
 }
