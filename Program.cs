@@ -52,6 +52,7 @@ namespace csharp_otaku
 
       // Arrays
       ArraysLists.Arrays.ArrayMethods();
+      ArraysLists.Lists.ListMethods();
     }
   }
 }
