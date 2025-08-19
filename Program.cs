@@ -30,7 +30,7 @@ namespace csharp_otaku
       var season = Season.Harmattan;
       Switch.SeasonReview(season);
 
-      // conditionals exercises
+      // conditionals exercise
       Conditionals.Exercise.ValidateOneToTen();
       Conditionals.Exercise.GetDualMax();
       Conditionals.Exercise.ValidateImageOreintation();
@@ -50,9 +50,14 @@ namespace csharp_otaku
       Iterations.Exercise.GuessingGame();
       Iterations.Exercise.FindMaxNumberInList();
 
-      // Arrays
+      // arrays and lists
       ArraysLists.Arrays.ArrayMethods();
       ArraysLists.Lists.ListMethods();
+
+      // arrays and lists exercise
+      ArraysLists.Exercise.DisplayLikesFromUsers();
+      ArraysLists.Exercise.ReverseString();
+      ArraysLists.Exercise.EnterUniqueNumbers();
     }
   }
 }
