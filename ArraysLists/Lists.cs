@@ -46,7 +46,7 @@ namespace csharp_otaku.ArraysLists
 
       // Clear
       numbers.Clear();
-      Console.WriteLine(numbers.Count);
+      Console.WriteLine($"count after clear: {numbers.Count}");
     }
   }
 }
