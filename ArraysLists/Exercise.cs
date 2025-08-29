@@ -112,5 +112,49 @@ namespace csharp_otaku.ArraysLists
         Console.WriteLine(number);
       }
     }
+
+    /// <summary>
+    /// Write a program and ask the user to continuously enter a number or type "Quit" to exit. The list of numbers may include duplicates. Display the unique numbers that the user has entered.
+    /// </summary>
+    public static void DisplayUniqueFromRandomNumbers()
+    {
+      var numbers = new List<int>();
+      var uniqueNumbers = new List<int>();
+
+      while (true)
+      {
+        Console.Write("Enter a random number or type \"Quit\" to exit: ");
+        var input = Console.ReadLine();
+
+        if (input == "Quit")
+        {
+          break;
+        }
+        else if (string.IsNullOrWhiteSpace(input))
+        {
+          Console.WriteLine("Input cannot be empty.");
+        }
+        else if (!int.TryParse(input, out _))
+        {
+          Console.WriteLine("Please enter a valid number.");
+        }
+        else
+        {
+          numbers.Add(Convert.ToInt32(input));
+        }
+      }
+
+      if (numbers.Count > 0)
+      {
+        Console.WriteLine("Filtered list of unique numbers:");
+
+        uniqueNumbers.AddRange(numbers.Distinct());
+
+        foreach (var uniqueNumber in uniqueNumbers)
+        {
+          Console.WriteLine(uniqueNumber);
+        }
+      }
+    }
   }
 }

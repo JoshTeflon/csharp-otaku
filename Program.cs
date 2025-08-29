@@ -58,6 +58,7 @@ namespace csharp_otaku
       ArraysLists.Exercise.DisplayLikesFromUsers();
       ArraysLists.Exercise.ReverseString();
       ArraysLists.Exercise.EnterUniqueNumbers();
+      ArraysLists.Exercise.DisplayUniqueFromRandomNumbers();
     }
   }
 }
