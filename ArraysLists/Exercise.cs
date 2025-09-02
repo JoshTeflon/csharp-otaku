@@ -16,35 +16,22 @@ namespace csharp_otaku.ArraysLists
 
       while (true)
       {
-        Console.Write("Enter a name (or press ENTER to finish): ");
+        Console.Write("Type a name (or hit ENTER to quit): ");
+
         var input = Console.ReadLine();
-
-        if (input?.Length > 0)
-        {
-          names.Add(input);
-        }
-        else
-        {
-          int nameCount = names.Count;
-
-          switch (nameCount)
-          {
-            case 0:
-              break;
-            case 1:
-              Console.WriteLine($"{names[0]} likes your post");
-              break;
-            case 2:
-              Console.WriteLine($"{names[0]} and {names[1]} like your post");
-              break;
-            default:
-              Console.WriteLine($"{names[0]}, {names[1]} and {nameCount - 2} other{(nameCount > 3 ? "s" : "")} like your post");
-              break;
-          }
-
+        if (string.IsNullOrWhiteSpace(input))
           break;
-        }
+        names.Add(input);
       }
+
+      if (names.Count > 2)
+        Console.WriteLine($"{names[0]}, {names[1]} and {names.Count - 2} other{(names.Count > 3 ? "s" : "")} like your post");
+      else if (names.Count == 2)
+        Console.WriteLine($"{names[0]} and {names[1]} like your post");
+      else if (names.Count == 1)
+        Console.WriteLine($"{names[0]} likes your post");
+      else
+        Console.WriteLine();
     }
 
     /// <summary>
@@ -57,15 +44,18 @@ namespace csharp_otaku.ArraysLists
 
       if (!string.IsNullOrWhiteSpace(name))
       {
-        char[] nameChars = name.ToCharArray();
+        var nameChars = new char[name.Length];
 
-        Array.Reverse(nameChars);
-        Console.WriteLine(nameChars);
+        for (var i = name.Length; i > 0; i--)
+          nameChars[name.Length - i] = name[i - 1];
 
-        if (new string(nameChars) == name)
-        {
+        var reversedName = new string(nameChars);
+
+        Console.WriteLine(reversedName);
+
+        // Optimized version of reversedName.toLower() == name.toLower()
+        if (reversedName.Equals(name, StringComparison.CurrentCultureIgnoreCase))
           Console.WriteLine("Wow! Your name is a palindrome🔄");
-        }
       }
       else
       {
@@ -126,7 +116,7 @@ namespace csharp_otaku.ArraysLists
         Console.Write("Enter a random number or type \"Quit\" to exit: ");
         var input = Console.ReadLine();
 
-        if (input == "Quit")
+        if (input?.ToLower() == "quit")
         {
           break;
         }
@@ -148,12 +138,18 @@ namespace csharp_otaku.ArraysLists
       {
         Console.WriteLine("Filtered list of unique numbers:");
 
-        uniqueNumbers.AddRange(numbers.Distinct());
+        // Optimized methods of achieving the below
+        // uniqueNumbers.AddRange(numbers.Distinct());
+        // uniqueNumbers.AddRange(numbers.Where(n => !uniqueNumbers.Contains(n)));
+
+        foreach (var number in numbers)
+        {
+          if (!uniqueNumbers.Contains(number))
+            uniqueNumbers.Add(number);
+        }
 
         foreach (var uniqueNumber in uniqueNumbers)
-        {
           Console.WriteLine(uniqueNumber);
-        }
       }
     }
 
