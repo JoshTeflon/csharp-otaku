@@ -139,8 +139,8 @@ namespace csharp_otaku.ArraysLists
         Console.WriteLine("Filtered list of unique numbers:");
 
         // Optimized methods of achieving the below
-        // uniqueNumbers.AddRange(numbers.Distinct());
-        // uniqueNumbers.AddRange(numbers.Where(n => !uniqueNumbers.Contains(n)));
+        // uniqueNumbers.AddRange(numbers.Distinct())
+        // uniqueNumbers.AddRange(numbers.Where(n => !uniqueNumbers.Contains(n)))
 
         foreach (var number in numbers)
         {
